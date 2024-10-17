@@ -6,10 +6,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Util {
-    private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String HOST = "jdbc:mysql://localhost:3306/test?serverTimezone=Europe/Moscow";
-    private static final String LOGIN = "root1";
-    private static final String PASSWORD = "1234";
+    private static final String DRIVER = "org.postgresql.Driver";
+    private static final String HOST = "jdbc:postgresql://localhost:5433/postgres";
+    private static final String LOGIN = "postgres";
+    private static final String PASSWORD = "22335";
 
     public static Connection getConnection() {
         Connection connection = null;
@@ -17,6 +17,7 @@ public class Util {
             Class.forName(DRIVER);
             connection = DriverManager.getConnection(HOST, LOGIN, PASSWORD);
         } catch (SQLException | ClassNotFoundException e) {
+            System.out.println("exp");
             e.printStackTrace();
         }
         return connection;
