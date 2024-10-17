@@ -57,20 +57,6 @@ public class UserDaoJDBCImpl implements UserDao {
         }
     }
 
-    /*try (PreparedStatement ps = connection.get().prepareStatement(REMOVE_USER,
-     Statement.RETURN_GENERATED_KEYS)) {
-        ps.setLong(1, id);
-        ps.executeUpdate();
-        System.out.println("UserDaoJDBCImpl: remove user with id=" + id);
-    } catch (SQLException ex) {
-        throw new OperationException("Remove user error: " + ex);
-    }
-} else {
-        throw new ConnectionException(CONNECTION_EXCEPTION);
-        }
-                }*/
-
-
     public List<User> getAllUsers() {
         List<User> allUser = new ArrayList<>();
         String sql = "SELECT id, name, lastName, age from public.users";
