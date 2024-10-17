@@ -15,18 +15,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("0");
         userService.createUsersTable();
-        System.out.println("11");
 
         userService.saveUser("Джо", "Байден", (byte) 78);
-        System.out.println("4");
         userService.saveUser("Трамп", "Дональд", (byte) 74);
-        System.out.println("5");
         userService.saveUser("Барак", "Обама", (byte) 59);
-        System.out.println("6");
         userService.saveUser("Джордж", "Буш", (byte) 74);
-        System.out.println("7");
 
         userService.getAllUsers();
 
