@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class Util {
     private static final String DRIVER = "org.postgresql.Driver";
-    private static final String HOST = "jdbc:postgresql://localhost:5433/postgres";
+    private static final String HOST = "jdbc:postgresql://localhost:5432/postgres";
     private static final String LOGIN = "postgres";
     private static final String PASSWORD = "22335";
 

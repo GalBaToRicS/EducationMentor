@@ -28,6 +28,8 @@ public class Main {
         userService.saveUser("Джордж", "Буш", (byte) 74);
         System.out.println("7");
 
+        userService.getAllUsers();
+
         userService.removeUserById(2);
 
         userService.getAllUsers();
